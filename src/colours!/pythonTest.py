@@ -15,13 +15,13 @@ def show_image(name, image):
 
 img = cv2.imread(TEST_IMAGE)
 
-# show_image('img', img)
+show_image('img', img)
 
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 mask = cv2.inRange(img_hsv, lower, upper)
 
-# show_image('mask', mask)
+show_image('mask', mask)
 
 contours = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)[0]
 contour = max(contours, key=cv2.contourArea, default=None)

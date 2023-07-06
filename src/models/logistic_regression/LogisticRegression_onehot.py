@@ -3,10 +3,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.model_selection import StratifiedKFold, train_test_split, cross_val_score
 
-USE_CROSS_VAL = True
+USE_CROSS_VAL = False
 
 # load and prepare data
-columns = list(range(1, 54))
+columns = range(1, 54)
 # columns.remove(9)
 # columns.remove(11)
 
