@@ -19,8 +19,8 @@ print(labels)
 # print(csvData.shape)
 
 # filter data by wing
-filtered = csvData[csvData[:, 0] == 1]
-filtered = filtered[filtered[:, 2] == 1]
+filtered = csvData[csvData[:, 1] == 1]
+filtered = filtered[filtered[:, 3] == 1]
 
 # print(filtered.shape)
 
@@ -40,5 +40,5 @@ for j in range(4, 53):
     if not os.path.exists('plots'):
         os.makedirs('plots')
 
-    # plt.savefig('plots/' + labels[j].lower() + '.png')
+    plt.savefig('plots/' + labels[j].lower() + '.png')
     plt.clf()
