@@ -63,7 +63,7 @@ model = keras.models.Sequential([
     keras.layers.Dense(10, activation='softmax')
 ])
 
-root_logdir = os.path.join(os.curdir, "src\\models\\pytorch\\logs\\fit\\")
+root_logdir = os.path.join(os.curdir, "src\\models\\pytorch\\alexnet\\logs\\fit\\")
 
 def get_run_logdir():
     run_id = time.strftime("run_%Y_%m_%d-%H_%M_%S")

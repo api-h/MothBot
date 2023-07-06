@@ -9,7 +9,7 @@ run("Fill Holes", "stack");
 run("Set Measurements...", "area fit shape feret's limit display add redirect=None decimal=3");
 run("Analyze Particles...", "size=20-Infinity display exclude summarize add stack");
 
-// for batch1
+// for unlabelled_batch1
 run("Set Scale...", "distance=1846.0531 known=40 unit=mm global");
 run("Options...", "iterations=5 count=1");
 run("HSB Stack");
