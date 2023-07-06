@@ -1,4 +1,6 @@
 admin
 utils
 data
+
+# model file too large to upload to github
 src/models/pytorch/alexnet.pt
