@@ -6,11 +6,11 @@ from sklearn.model_selection import StratifiedKFold, train_test_split, cross_val
 USE_CROSS_VAL = True
 
 # load and prepare data
-columns = range(1, 54)
+columns = range(1, 52)
 # columns.remove(9)
 # columns.remove(11)
 
-data = np.loadtxt('data/labelled/data_normalized_onehot.csv',
+data = np.loadtxt('data/labelled/data_normalized_onehot_simplified.csv',
                   delimiter=',',
                   skiprows=1,
                   usecols=columns)
