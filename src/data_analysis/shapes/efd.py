@@ -6,7 +6,8 @@ import pyefd
 from tqdm import tqdm
 
 cwd = os.getcwd()
-folder = os.path.join(cwd, 'data', "unlabelled_batch1", "split", "rear", "right")
+folder = os.path.join(cwd, 'data', "labelled", "split_corrected",
+                      "zea", "rear", "right")
 
 files = list(filter(lambda x: x.endswith('.jpg'), os.listdir(folder)))
 
