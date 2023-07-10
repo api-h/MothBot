@@ -6,3 +6,4 @@ data/labelled/split
 data/labelled/split_corrected
 data/unlabelled_batch1/orig
 data/unlabelled_batch1/split
+venv
