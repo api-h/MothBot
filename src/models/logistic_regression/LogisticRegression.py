@@ -10,7 +10,7 @@ columns = list(range(1, 51))
 columns.remove(6)
 columns.remove(8)
 
-data = np.loadtxt('data/data_normalized.csv',
+data = np.loadtxt('data/labelled/data_normalized.csv',
                   delimiter=',',
                   skiprows=1,
                   usecols=columns)
